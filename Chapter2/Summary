@@ -1,0 +1,41 @@
+1. Description of multi-armed bandits problem
+   In k-armed bandits problem, we should pick one arm (take an action)in one time step, then a reward associated to the action taken 
+ will give us a feedback, and our goal is make the total rewards as more as possible by finding the optimal action. k arms' rewards have 
+ k Gaussian distributions like N(miu_i, 1), and the mean miu_i is from N(0,1). Initial rewards are set by ourselves. And according to law 
+ of big number, the average reward of each action will converge to its mean. In stationary case, the distribution of each action's reward 
+ is constant but variable in nonstationary case.
+ 
+ 
+2. Action-value Method
+    a. fit stationary case
+    b. strategy: greedy and epsilon-greedy. epsilon-greedy tends to explore than greedy strategy.
+    c. performance: epsilon-greedy strategy is better in the long run, greedy strategy is better in the short beginning.
+    d. choice of epsilon: smaller epsilon has higher reward and higher rate of optimal action than larger one in the quite long run.
+    e. if the reward of each action is constant, greedy is better than epsilon greedy strategy.
+    f. simulate exploration trick: optimistic initial values, upper-confidence-bound action selection.
+    
+    
+3. Gradient Method
+    a. idea: use the probability of each action to make decisions(also need to initialize)
+    b. assumption: actions have softmax distribution
+    
+    
+4. Nonstationary case
+    a. idea: more focu on the recent rewards than the long past.
+    b. method: choose appropriate step-size param which satisfies above idea such as exponential recency-weighted average, unbiased
+       constant-step-size method(trick)
+       
+       
+5. Associative Search(Contextual Bandits)
+    ...
+    
+    
+6. Parameter Study
+    a. not only measure how well a method does at its best param setting, but also how sensitve it is to its param values.
+    b. UCB seems to have the best performance in average reward.
+    
+    
+7. Bayesian Method
+    a. Gittins-index approach
+    b. other kinds of method...
+    
