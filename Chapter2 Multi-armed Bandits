@@ -1,0 +1,10 @@
+Chapter2's insights:
+  Q: What's the character of Multi-armed Bandits problem?(contrast to full reinforcement learning problem?
+  A: Multi-armed Bandits problem only need us to act in one situation which is called nonassociative setting.
+  
+  Q: What's the difference between stationary and unstationary probability distribution?
+  A: Stationary distribution means the distribution does not change as time goes on, unstationary one on the contrary.
+  
+  Q: What's the difference between stationary and unstationary methods in Multi-armed Bandits problem?
+  A: Stationary method treats reward in each step equally because they are from a stationary distribution independently,
+     but unstationary method gives more weighs to recent rewards than the long past rewards.
